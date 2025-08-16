@@ -9,18 +9,18 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-lg transition-all duration-300",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90 hover:shadow-lg transition-all duration-300",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground hover:shadow-md transition-all duration-300",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        gaming: "bg-gradient-button text-white font-semibold shadow-gaming hover:shadow-gold hover:scale-[1.02] active:scale-[0.98]",
-        "gaming-gold": "bg-gradient-gold text-gaming-black font-bold shadow-gold hover:shadow-gaming hover:scale-[1.02] active:scale-[0.98] glow-gaming",
-        "gaming-outline": "border-2 border-gaming-gold text-gaming-gold bg-transparent hover:bg-gaming-gold hover:text-gaming-black hover:scale-[1.01] active:scale-[0.99] font-semibold"
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80 hover:shadow-md transition-all duration-300",
+        ghost: "hover:bg-accent hover:text-accent-foreground hover:shadow-sm transition-all duration-300",
+        link: "text-primary underline-offset-4 hover:underline hover:brightness-110 transition-all duration-300",
+        gaming: "bg-gradient-button text-white font-semibold shadow-gaming hover:shadow-gold hover:scale-[1.02] hover:brightness-110 active:scale-[0.98] btn-hover-glow",
+        "gaming-gold": "bg-gradient-gold text-gaming-black font-bold shadow-gold hover:shadow-gaming hover:scale-[1.02] hover:brightness-110 active:scale-[0.98] glow-gaming btn-hover-glow relative",
+        "gaming-outline": "border-2 border-gaming-gold text-gaming-gold bg-transparent hover:bg-gaming-gold hover:text-gaming-black hover:scale-[1.01] hover:shadow-gold active:scale-[0.99] font-semibold relative overflow-hidden before:absolute before:inset-0 before:bg-gaming-gold before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-300 before:z-[-1]"
       },
       size: {
         default: "h-9 px-4 py-2",
