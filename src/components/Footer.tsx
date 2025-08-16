@@ -3,8 +3,8 @@ const Footer = () => {
 
   const footerLinks = {
     navegacao: [
-      { name: "Início", href: "#" },
-      { name: "Como Jogar", href: "#" },
+      { name: "Início", href: "/" },
+      { name: "Como Jogar", href: "/como-jogar" },
       { name: "Demo", href: "#" },
       { name: "Estratégias", href: "#" }
     ],
