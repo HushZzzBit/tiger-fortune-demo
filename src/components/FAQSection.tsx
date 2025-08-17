@@ -62,16 +62,16 @@ const FAQSection = () => {
         
         {/* Additional help section */}
         <div className="text-center mt-16">
-          <div className="inline-flex items-center gap-4 text-sm text-gray-400">
-            <span className="flex items-center gap-2">
+          <div className="flex flex-col sm:flex-row sm:justify-center items-center gap-3 sm:gap-4 text-sm text-gray-400 px-4">
+            <span className="flex items-center gap-2 whitespace-nowrap">
               <span className="text-gaming-gold">💬</span>
               Suporte 24/7
             </span>
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 break-all sm:break-normal">
               <span className="text-gaming-gold">📧</span>
-              suporte@fortunedemo.com
+              <span className="text-xs sm:text-sm">suporte@fortunedemo.com</span>
             </span>
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 whitespace-nowrap">
               <span className="text-gaming-gold">🕐</span>
               Resposta em até 2h
             </span>
