@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import {
   NavigationMenu,
@@ -71,14 +70,14 @@ const Navigation = () => {
         </NavigationMenu>
 
         {/* Mobile Navigation */}
-        <div className="md:hidden relative">
+        <div className="md:hidden">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="bg-transparent">
                   Menu
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="absolute right-0 top-full w-[280px] bg-background border border-border shadow-lg z-50">
+                <NavigationMenuContent className="w-[280px] bg-background border border-border shadow-lg right-0">
                   <div className="grid gap-3 p-4">
                     {navigationItems.map((item) => (
                       <Link
