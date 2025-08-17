@@ -70,14 +70,14 @@ const Navigation = () => {
         </NavigationMenu>
 
         {/* Mobile Navigation */}
-        <div className="md:hidden relative z-50">
+        <div className="md:hidden">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent z-50">
+                <NavigationMenuTrigger className="bg-transparent">
                   Menu
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="absolute right-0 top-full mt-2 w-[280px] bg-background border border-border shadow-lg rounded-md z-[100]">
+                <NavigationMenuContent className="w-[280px] bg-background border border-border shadow-lg">
                   <div className="grid gap-3 p-4">
                     {navigationItems.map((item) => (
                       <Link
