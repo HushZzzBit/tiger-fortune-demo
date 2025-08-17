@@ -123,7 +123,7 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white drop-shadow-2xl">
-            🎰 Jogue o <span className="text-yellow-300 drop-shadow-lg">Fortune Tiger</span> 
+            Jogue o <span className="text-yellow-300 drop-shadow-lg">Fortune Tiger</span> 
             <br />demo grátis com saldo virtual ilimitado
           </h1>
           
