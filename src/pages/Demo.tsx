@@ -39,49 +39,56 @@ const Demo = () => {
   return (
     <div className="min-h-screen bg-gaming-bg">
       <Navigation />
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
-          <div className="absolute inset-0 bg-black/70"></div>
+      {/* Hero Section with Game Iframe */}
+      <section className="relative min-h-screen flex flex-col items-center justify-center bg-gaming-bg py-20">
+        <div className="container mx-auto px-4 text-center mb-8">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">
+            🎰 Jogue <span className="text-gaming-gold">Fortune Tiger Demo</span> 
+            <br />Grátis com Dinheiro Infinito
+          </h1>
+          
+          <p className="text-lg md:text-xl mb-6 text-gray-200 font-medium">
+            Treine sem risco antes de apostar com dinheiro real
+          </p>
+          
+          <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base text-gray-300 mb-8">
+            <div className="flex items-center gap-2">
+              <span className="text-gaming-gold">✓</span>
+              Modo demo completo
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-gaming-gold">✓</span>
+              Dinheiro virtual infinito
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-gaming-gold">✓</span>
+              Sem cadastro necessário
+            </div>
+          </div>
         </div>
         
-        <div className="relative z-10 container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white">
-              🎰 Jogue <span className="text-gaming-gold">Fortune Tiger Demo</span> 
-              <br />Grátis com Dinheiro Infinito
-            </h1>
-            
-            <p className="text-xl md:text-2xl mb-8 text-gray-200 font-medium">
-              Treine sem risco antes de apostar com dinheiro real
-            </p>
-            
+        {/* Game Iframe */}
+        <div className="w-full max-w-4xl mx-auto px-4">
+          <div className="bg-gradient-gold p-2 rounded-2xl shadow-2xl">
+            <iframe 
+              className="w-full h-[600px] md:h-[700px] lg:h-[800px] rounded-xl"
+              id="game-frame" 
+              src="https://pg-static.casinomobule.com/126/index.html?__refer=m.https%3A%2F%2Fpg-test.casinomobule.com&ot=demo-575326-9a9488ae-1621-4aa6-9887-5399248f7e1a&or=pg-static.casinomobule.com&btt=2&l=en&from=https%3A%2F%2Fcopyslots.com%2F&__hv=1f8e1d3b&language=en_EN"
+              title="Fortune Tiger Demo Game"
+              allow="fullscreen; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+          
+          <div className="text-center mt-6">
             <Button 
               variant="gaming-gold" 
               size="xl"
               onClick={handlePlayNow}
-              className="text-lg md:text-xl px-12 py-6 mb-8 pulse-gaming"
+              className="text-lg md:text-xl px-12 py-6 pulse-gaming"
             >
-              🎮 Jogar agora gratuitamente
+              🎁 Jogar com dinheiro real e bônus
             </Button>
-            
-            <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base text-gray-300">
-              <div className="flex items-center gap-2">
-                <span className="text-gaming-gold">✓</span>
-                Modo demo completo
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-gaming-gold">✓</span>
-                Dinheiro virtual infinito
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-gaming-gold">✓</span>
-                Sem cadastro necessário
-              </div>
-            </div>
           </div>
         </div>
       </section>
