@@ -77,7 +77,7 @@ const Navigation = () => {
                 <NavigationMenuTrigger className="bg-transparent">
                   Menu
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="w-[280px] bg-background border border-border shadow-lg">
+                <NavigationMenuContent className="w-[280px] bg-background border border-border shadow-lg right-0">
                   <div className="grid gap-3 p-4">
                     {navigationItems.map((item) => (
                       <Link
