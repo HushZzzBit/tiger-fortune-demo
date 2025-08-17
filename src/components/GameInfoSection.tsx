@@ -1,4 +1,4 @@
-import gameImage from "@/assets/fortune-tiger-game.jpg";
+
 
 const GameInfoSection = () => {
   const gameStats = [
@@ -26,8 +26,8 @@ const GameInfoSection = () => {
           <div className="relative">
             <div className="bg-gradient-gold p-1 rounded-2xl">
               <img 
-                src={gameImage} 
-                alt="Fortune Tiger slot game interface showing 3x3 grid with tiger symbols"
+                src="/lovable-uploads/4ba196fa-11c9-4cb4-b3ef-ff55ef5cd5ca.png" 
+                alt="Fortune Tiger slot game interface showing cool tiger character with sunglasses and gold coins"
                 className="w-full rounded-xl shadow-card"
               />
             </div>
