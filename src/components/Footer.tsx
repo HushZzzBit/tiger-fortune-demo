@@ -5,14 +5,14 @@ const Footer = () => {
     navegacao: [
       { name: "Início", href: "/" },
       { name: "Como Jogar", href: "/como-jogar" },
-      { name: "Demo", href: "#" },
+      { name: "Demo", href: "/demo" },
       { name: "Estratégias", href: "#" }
     ],
     legal: [
-      { name: "Política de Privacidade", href: "#" },
-      { name: "Termos de Uso", href: "#" },
+      { name: "Política de Privacidade", href: "/politica-privacidade" },
+      { name: "Termos de Uso", href: "/termos-uso" },
       { name: "Jogo Responsável", href: "#" },
-      { name: "Contato", href: "#" }
+      { name: "Contato", href: "/contato" }
     ]
   };
 
