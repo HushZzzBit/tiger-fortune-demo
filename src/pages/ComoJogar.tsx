@@ -15,32 +15,27 @@ const ComoJogar = () => {
     {
       number: "1",
       title: "Acesse o site confiável",
-      description: "Clique no botão e acesse uma plataforma licenciada e segura",
-      icon: "🌐"
+      description: "Clique no botão e acesse uma plataforma licenciada e segura"
     },
     {
       number: "2", 
       title: "Cadastre-se",
-      description: "Registro rápido em menos de 2 minutos com seus dados básicos",
-      icon: "👤"
+      description: "Registro rápido em menos de 2 minutos com seus dados básicos"
     },
     {
       number: "3",
       title: "Escolha demo ou real",
-      description: "Teste no modo demo gratuito ou jogue com dinheiro real",
-      icon: "🎯"
+      description: "Teste no modo demo gratuito ou jogue com dinheiro real"
     },
     {
       number: "4",
       title: "Ajuste sua aposta",
-      description: "Defina o valor da aposta usando os botões + e - na tela",
-      icon: "💰"
+      description: "Defina o valor da aposta usando os botões + e - na tela"
     },
     {
       number: "5",
       title: "Gire os rolos",
-      description: "Clique no botão central para iniciar o jogo e torcer pela sorte",
-      icon: "🎰"
+      description: "Clique no botão central para iniciar o jogo e torcer pela sorte"
     }
   ];
 
@@ -149,8 +144,6 @@ const ComoJogar = () => {
                   <div className="w-12 h-12 bg-gradient-gold rounded-full flex items-center justify-center text-gaming-black text-xl font-bold mx-auto mb-4">
                     {step.number}
                   </div>
-                  
-                  <div className="text-4xl mb-4">{step.icon}</div>
                   
                   <h3 className="text-lg font-bold text-white mb-3">{step.title}</h3>
                   <p className="text-gray-300 text-sm">{step.description}</p>
