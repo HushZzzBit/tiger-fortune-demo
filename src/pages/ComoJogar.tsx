@@ -1,3 +1,4 @@
+import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -90,6 +91,7 @@ const ComoJogar = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
       {/* Hero Section */}
       <section className="py-16 bg-gradient-hero text-center">
         <div className="container mx-auto px-4">
