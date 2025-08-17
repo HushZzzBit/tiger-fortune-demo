@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import gameImage from "@/assets/fortune-tiger-game.jpg";
+
 import heroImage from "@/assets/hero-tiger.jpg";
 import Footer from "@/components/Footer";
 
@@ -118,8 +118,8 @@ const Demo = () => {
             <div className="relative">
               <div className="bg-gradient-gold p-1 rounded-2xl">
                 <img 
-                  src={gameImage} 
-                  alt="fortune tiger demo grátis interface do jogo"
+                  src="/lovable-uploads/f1e6a1ba-9c26-4dd4-b710-3f20495c9df7.png" 
+                  alt="Fortune Tiger demo grátis interface do jogo mostrando tela de jogo completa com símbolos"
                   className="w-full rounded-xl shadow-card"
                 />
               </div>
