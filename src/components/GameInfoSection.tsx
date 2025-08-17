@@ -9,19 +9,19 @@ const GameInfoSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-card">
+    <section className="py-12 md:py-20 bg-gradient-card">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 px-4">
             Sobre o <span className="text-gaming-gold">Fortune Tiger</span>
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto px-4">
             O slot mais popular do Brasil, agora em versão demo gratuita. 
             Teste suas estratégias sem riscos!
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Game Image */}
           <div className="relative">
             <div className="bg-gradient-gold p-1 rounded-2xl">

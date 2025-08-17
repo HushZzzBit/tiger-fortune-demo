@@ -40,13 +40,13 @@ const Navigation = () => {
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-3">
+        <Link to="/" className="flex items-center space-x-2 md:space-x-3 min-w-0">
           <img 
             src="/lovable-uploads/4b366b2a-2467-4f9c-a704-fd8f295221f2.png" 
             alt="Tigre da Sorte Fortune Tiger" 
-            className="h-10 w-auto"
+            className="h-8 md:h-10 w-auto flex-shrink-0"
           />
-          <span className="text-xl font-bold text-gaming-gold">Fortune Tiger</span>
+          <span className="text-lg md:text-xl font-bold text-gaming-gold truncate">Fortune Tiger</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -108,7 +108,7 @@ const Navigation = () => {
           href="https://storage.hoster4land.net"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden sm:inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+          className="hidden sm:inline-flex items-center justify-center rounded-md bg-primary px-3 md:px-4 py-2 text-xs md:text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring whitespace-nowrap"
         >
           🎰 Jogar Agora
         </a>

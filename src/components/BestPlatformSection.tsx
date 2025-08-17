@@ -20,8 +20,8 @@ const BestPlatformSection = () => {
           </p>
         </div>
         
-        <div className="max-w-md mx-auto">
-          <div className="bg-gradient-card rounded-2xl p-8 shadow-card border border-gaming-gold/20 hover:border-gaming-gold/50 transition-all duration-300 relative overflow-hidden">
+        <div className="max-w-md mx-auto px-4">
+          <div className="bg-gradient-card rounded-2xl p-6 md:p-8 shadow-card border border-gaming-gold/20 hover:border-gaming-gold/50 transition-all duration-300 relative overflow-hidden">
             {/* Background glow effect */}
             <div className="absolute inset-0 bg-gradient-gold opacity-5"></div>
             
@@ -78,15 +78,15 @@ const BestPlatformSection = () => {
           </div>
         </div>
         
-        <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-4 text-sm text-gray-400">
-            <span className="flex items-center gap-2">
+        <div className="text-center mt-12 px-4">
+          <div className="flex flex-wrap justify-center items-center gap-2 md:gap-4 text-xs md:text-sm text-gray-400">
+            <span className="flex items-center gap-2 whitespace-nowrap">
               🔒 SSL Certificado
             </span>
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 whitespace-nowrap">
               🛡️ Jogo Responsável
             </span>
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 whitespace-nowrap">
               ⚡ Saques Rápidos
             </span>
           </div>
