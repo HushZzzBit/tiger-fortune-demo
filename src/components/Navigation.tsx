@@ -28,6 +28,11 @@ const Navigation = () => {
       title: "Demo Grátis",
       href: "/demo",
       description: "Jogue a versão demo gratuita"
+    },
+    {
+      title: "Estratégias",
+      href: "/estrategias",
+      description: "Dicas e estratégias para jogar melhor"
     }
   ];
 
