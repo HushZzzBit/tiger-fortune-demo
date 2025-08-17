@@ -11,7 +11,7 @@ const Footer = () => {
     legal: [
       { name: "Política de Privacidade", href: "/politica-privacidade" },
       { name: "Termos de Uso", href: "/termos-uso" },
-      { name: "Jogo Responsável", href: "#" },
+      { name: "Jogo Responsável", href: "/jogo-responsavel" },
       { name: "Contato", href: "/contato" }
     ]
   };
