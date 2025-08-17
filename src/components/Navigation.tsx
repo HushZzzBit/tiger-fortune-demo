@@ -28,11 +28,6 @@ const Navigation = () => {
       title: "Demo Grátis",
       href: "/demo",
       description: "Jogue a versão demo gratuita"
-    },
-    {
-      title: "Jogo Responsável",
-      href: "/jogo-responsavel",
-      description: "Práticas de jogo seguro e responsável"
     }
   ];
 
