@@ -15,27 +15,32 @@ const ComoJogar = () => {
     {
       number: "1",
       title: "Acesse o site confiável",
-      description: "Clique no botão e acesse uma plataforma licenciada e segura"
+      description: "Clique no botão e acesse uma plataforma licenciada e segura",
+      icon: "🌐"
     },
     {
       number: "2", 
       title: "Cadastre-se",
-      description: "Registro rápido em menos de 2 minutos com seus dados básicos"
+      description: "Registro rápido em menos de 2 minutos com seus dados básicos",
+      icon: "👤"
     },
     {
       number: "3",
       title: "Escolha demo ou real",
-      description: "Teste no modo demo gratuito ou jogue com dinheiro real"
+      description: "Teste no modo demo gratuito ou jogue com dinheiro real",
+      icon: "🎯"
     },
     {
       number: "4",
       title: "Ajuste sua aposta",
-      description: "Defina o valor da aposta usando os botões + e - na tela"
+      description: "Defina o valor da aposta usando os botões + e - na tela",
+      icon: "💰"
     },
     {
       number: "5",
       title: "Gire os rolos",
-      description: "Clique no botão central para iniciar o jogo e torcer pela sorte"
+      description: "Clique no botão central para iniciar o jogo e torcer pela sorte",
+      icon: "🎰"
     }
   ];
 

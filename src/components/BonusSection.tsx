@@ -5,17 +5,20 @@ const BonusSection = () => {
     {
       number: "1",
       title: "Cadastre-se",
-      description: "Registro rápido e seguro em menos de 2 minutos"
+      description: "Registro rápido e seguro em menos de 2 minutos",
+      icon: "👤"
     },
     {
       number: "2", 
       title: "Ganhe bônus",
-      description: "R$200 + giros grátis creditados automaticamente"
+      description: "R$200 + giros grátis creditados automaticamente",
+      icon: "🎁"
     },
     {
       number: "3",
       title: "Jogue Fortune Tiger",
-      description: "Teste o jogo com dinheiro de bônus"
+      description: "Teste o jogo com dinheiro de bônus",
+      icon: "🎰"
     }
   ];
 
