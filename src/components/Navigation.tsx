@@ -35,12 +35,13 @@ const Navigation = () => {
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2">
+        <Link to="/" className="flex items-center space-x-3">
           <img 
             src="/lovable-uploads/4b366b2a-2467-4f9c-a704-fd8f295221f2.png" 
             alt="Tigre da Sorte Fortune Tiger" 
             className="h-10 w-auto"
           />
+          <span className="text-xl font-bold text-gaming-gold">Fortune Tiger</span>
         </Link>
 
         {/* Desktop Navigation */}
