@@ -36,10 +36,11 @@ const Navigation = () => {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <span className="text-2xl">🐯</span>
-          <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Fortune Tiger
-          </span>
+          <img 
+            src="/lovable-uploads/43136cd2-d4f3-4a43-8940-2d2dd5567349.png" 
+            alt="Tigre da Sorte Fortune Tiger" 
+            className="h-10 w-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}

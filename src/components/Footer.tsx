@@ -23,9 +23,11 @@ const Footer = () => {
           {/* Logo and description */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-gold rounded-full flex items-center justify-center text-gaming-black text-xl font-bold">
-                🐅
-              </div>
+              <img 
+                src="/lovable-uploads/43136cd2-d4f3-4a43-8940-2d2dd5567349.png" 
+                alt="Tigre da Sorte Fortune Tiger" 
+                className="h-12 w-auto"
+              />
               <div>
                 <h3 className="text-xl font-bold text-white">Fortune Demo</h3>
                 <p className="text-gaming-gold text-sm">Sua portal do Fortune Tiger</p>
