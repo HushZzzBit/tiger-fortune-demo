@@ -70,15 +70,15 @@ const Navigation = () => {
         </NavigationMenu>
 
         {/* Mobile Navigation */}
-        <div className="md:hidden">
+        <div className="md:hidden relative z-50">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent">
+                <NavigationMenuTrigger className="bg-transparent z-50">
                   Menu
                 </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <div className="grid gap-3 p-4 w-[300px]">
+                <NavigationMenuContent className="absolute right-0 top-full mt-2 w-[280px] bg-background border border-border shadow-lg rounded-md z-[100]">
+                  <div className="grid gap-3 p-4">
                     {navigationItems.map((item) => (
                       <Link
                         key={item.href}
