@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Smartphone, Monitor, Clock, Target, TrendingUp, Star } from "lucide-react";
 import Footer from "@/components/Footer";
+import SymbolsSection from "@/components/SymbolsSection";
 
 const ComoJogar = () => {
   const handlePlayNow = () => {
@@ -14,27 +15,32 @@ const ComoJogar = () => {
     {
       number: "1",
       title: "Acesse o site confiável",
-      description: "Clique no botão e acesse uma plataforma licenciada e segura"
+      description: "Clique no botão e acesse uma plataforma licenciada e segura",
+      icon: "🌐"
     },
     {
       number: "2", 
       title: "Cadastre-se",
-      description: "Registro rápido em menos de 2 minutos com seus dados básicos"
+      description: "Registro rápido em menos de 2 minutos com seus dados básicos",
+      icon: "📝"
     },
     {
       number: "3",
       title: "Escolha demo ou real",
-      description: "Teste no modo demo gratuito ou jogue com dinheiro real"
+      description: "Teste no modo demo gratuito ou jogue com dinheiro real",
+      icon: "🎮"
     },
     {
       number: "4",
       title: "Ajuste sua aposta",
-      description: "Defina o valor da aposta usando os botões + e - na tela"
+      description: "Defina o valor da aposta usando os botões + e - na tela",
+      icon: "💰"
     },
     {
       number: "5",
       title: "Gire os rolos",
-      description: "Clique no botão central para iniciar o jogo e torcer pela sorte"
+      description: "Clique no botão central para iniciar o jogo e torcer pela sorte",
+      icon: "🎰"
     }
   ];
 
@@ -304,48 +310,8 @@ const ComoJogar = () => {
         </div>
       </section>
 
-      {/* Payout Table */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              📊 Tabela de <span className="text-gaming-gold">Pagamento</span>
-            </h2>
-            <p className="text-lg text-gray-300">
-              Conheça os valores de cada símbolo do Fortune Tiger
-            </p>
-          </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-card rounded-2xl p-8 shadow-card">
-              <div className="grid gap-4">
-                {payouts.map((payout, index) => (
-                  <div key={index} className="flex items-center justify-between bg-card p-6 rounded-xl hover:shadow-gold transition-all duration-300">
-                    <div className="flex items-center gap-4">
-                      <div className="text-4xl">{payout.symbol}</div>
-                      <div>
-                        <h3 className="text-white font-bold">{payout.name}</h3>
-                        <p className="text-gray-400 text-sm">{payout.description}</p>
-                      </div>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-gaming-gold font-bold text-2xl">{payout.multiplier}</div>
-                      <div className="text-gray-400 text-sm">multiplicador</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              
-              <div className="mt-8 p-6 bg-gaming-gold/10 rounded-xl text-center border border-gaming-gold/30">
-                <h3 className="text-gaming-gold font-bold text-lg mb-2">🎰 Como funciona?</h3>
-                <p className="text-gray-300">
-                  Forme combinações de 3 símbolos iguais para ganhar. O Wild (🐯) substitui qualquer símbolo!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Symbols Section */}
+      <SymbolsSection />
 
       {/* Final CTA */}
       <section className="py-20 bg-gradient-hero">
