@@ -80,7 +80,7 @@ const Estrategias = () => {
               variant="gaming" 
               size="xl"
               onClick={handlePlayNow}
-              className="pulse-gaming"
+              className="pulse-gaming text-sm sm:text-base px-4 sm:px-8 py-3 sm:py-4 whitespace-nowrap"
             >
               Jogar com Bônus Agora
             </Button>
@@ -195,14 +195,14 @@ const Estrategias = () => {
                   ))}
                 </ul>
 
-                <div className="bg-gaming-gold/10 p-6 rounded-lg border border-gaming-gold/30">
-                  <h3 className="text-lg font-bold text-gaming-gold mb-4">Exemplo prático:</h3>
-                  <div className="grid md:grid-cols-2 gap-4 text-sm">
-                    <div>
+                <div className="bg-gaming-gold/10 p-4 sm:p-6 rounded-lg border border-gaming-gold/30">
+                  <h3 className="text-base sm:text-lg font-bold text-gaming-gold mb-4">Exemplo prático:</h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                    <div className="space-y-1">
                       <p className="text-white"><strong>Banca:</strong> R$200</p>
                       <p className="text-white"><strong>Aposta por rodada:</strong> R$1</p>
                     </div>
-                    <div>
+                    <div className="space-y-1">
                       <p className="text-white"><strong>Parar com lucro:</strong> R$300</p>
                       <p className="text-white"><strong>Parar com prejuízo:</strong> R$100</p>
                     </div>
@@ -281,21 +281,21 @@ const Estrategias = () => {
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-6xl font-bold text-white mb-8">
-              Você não precisa de truques secretos. <br />
+            <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-white mb-8 leading-tight">
+              Você não precisa de truques secretos. <br className="hidden sm:block" />
               Precisa de <span className="text-gaming-gold">controle e estratégia</span>.
             </h2>
             
-            <div className="grid md:grid-cols-4 gap-6 mb-12 max-w-3xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-3xl mx-auto">
               {[
                 { icon: "🔁", text: "Teste no modo demo" },
                 { icon: "🎯", text: "Gerencie sua banca" },
                 { icon: "⏰", text: "Escolha horários estratégicos" },
                 { icon: "🚫", text: "Evite falsas promessas" }
               ].map((tip, index) => (
-                <div key={index} className="text-center p-4 bg-white/10 rounded-lg backdrop-blur-sm">
-                  <div className="text-3xl mb-2">{tip.icon}</div>
-                  <p className="text-white text-sm font-medium">{tip.text}</p>
+                <div key={index} className="text-center p-3 sm:p-4 bg-white/10 rounded-lg backdrop-blur-sm">
+                  <div className="text-2xl sm:text-3xl mb-2">{tip.icon}</div>
+                  <p className="text-white text-xs sm:text-sm font-medium leading-tight">{tip.text}</p>
                 </div>
               ))}
             </div>
@@ -304,9 +304,9 @@ const Estrategias = () => {
               variant="gaming-gold" 
               size="xl"
               onClick={handlePlayNow}
-              className="text-xl px-16 py-8 pulse-gaming text-gaming-black font-bold"
+              className="text-base sm:text-xl px-6 sm:px-16 py-4 sm:py-8 pulse-gaming text-gaming-black font-bold w-full sm:w-auto max-w-full break-words text-center"
             >
-              Jogar Fortune Tiger com bônus de boas-vindas
+              Jogar Fortune Tiger com bônus
             </Button>
           </div>
         </div>
@@ -318,7 +318,7 @@ const Estrategias = () => {
           variant="gaming-gold" 
           size="lg"
           onClick={handlePlayNow}
-          className="shadow-2xl pulse-gaming rounded-full px-6"
+          className="shadow-2xl pulse-gaming rounded-full px-4 py-2 text-sm whitespace-nowrap"
         >
           Jogar Agora
         </Button>
