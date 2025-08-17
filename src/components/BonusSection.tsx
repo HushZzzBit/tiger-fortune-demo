@@ -6,19 +6,19 @@ const BonusSection = () => {
       number: "1",
       title: "Cadastre-se",
       description: "Registro rápido e seguro em menos de 2 minutos",
-      icon: ""
+      icon: "👤"
     },
     {
       number: "2", 
       title: "Ganhe bônus",
       description: "R$200 + giros grátis creditados automaticamente",
-      icon: ""
+      icon: "🎁"
     },
     {
       number: "3",
       title: "Jogue Fortune Tiger",
       description: "Teste o jogo com dinheiro de bônus",
-      icon: ""
+      icon: "🎰"
     }
   ];
 
@@ -76,7 +76,7 @@ const BonusSection = () => {
             onClick={handleGetBonus}
             className="text-lg px-12 py-6 glow-gaming"
           >
-            Receber bônus agora
+            🎁 Receber bônus agora
           </Button>
           
           <p className="text-sm text-gray-400 mt-4">
@@ -87,10 +87,10 @@ const BonusSection = () => {
         {/* Benefits highlight */}
         <div className="mt-16 grid md:grid-cols-4 gap-6">
           {[
-            { icon: "", text: "Registro instantâneo" },
-            { icon: "", text: "100% seguro" }, 
-            { icon: "", text: "Sem depósito inicial" },
-            { icon: "", text: "Jogue no celular" }
+            { icon: "⚡", text: "Registro instantâneo" },
+            { icon: "🔒", text: "100% seguro" }, 
+            { icon: "💰", text: "Sem depósito inicial" },
+            { icon: "📱", text: "Jogue no celular" }
           ].map((benefit, index) => (
             <div key={index} className="text-center p-4">
               <div className="text-3xl mb-2">{benefit.icon}</div>
