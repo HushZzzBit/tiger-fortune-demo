@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <img 
-                src="/lovable-uploads/43136cd2-d4f3-4a43-8940-2d2dd5567349.png" 
+                src="/lovable-uploads/4b366b2a-2467-4f9c-a704-fd8f295221f2.png" 
                 alt="Tigre da Sorte Fortune Tiger" 
                 className="h-12 w-auto"
               />
