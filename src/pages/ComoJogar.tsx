@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Smartphone, Monitor, Clock, Target, TrendingUp, Star } from "lucide-react";
+import Footer from "@/components/Footer";
 
 const ComoJogar = () => {
   const handlePlayNow = () => {
@@ -401,6 +402,8 @@ const ComoJogar = () => {
           🎰 Jogar Agora
         </Button>
       </div>
+      
+      <Footer />
     </div>
   );
 };

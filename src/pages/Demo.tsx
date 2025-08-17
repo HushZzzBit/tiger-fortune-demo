@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import gameImage from "@/assets/fortune-tiger-game.jpg";
 import heroImage from "@/assets/hero-tiger.jpg";
+import Footer from "@/components/Footer";
 
 const Demo = () => {
   const handlePlayNow = () => {
@@ -367,6 +368,8 @@ const Demo = () => {
           🎰 Jogar Agora
         </Button>
       </div>
+      
+      <Footer />
     </div>
   );
 };
