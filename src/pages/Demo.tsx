@@ -85,7 +85,7 @@ const Demo = () => {
               variant="gaming-gold" 
               size="xl"
               onClick={handlePlayNow}
-              className="text-lg md:text-xl px-12 py-6 pulse-gaming"
+              className="text-base sm:text-lg md:text-xl px-6 sm:px-12 py-4 sm:py-6 pulse-gaming w-full sm:w-auto max-w-full break-words"
             >
               🎁 Jogar com dinheiro real e bônus
             </Button>
@@ -147,17 +147,17 @@ const Demo = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="text-center">
-                  <h3 className="text-xl font-bold text-gaming-gold mb-4">Fortune Tiger Original</h3>
-                  <div className="space-y-2 text-gray-300">
+                  <h3 className="text-lg sm:text-xl font-bold text-gaming-gold mb-4">Fortune Tiger Original</h3>
+                  <div className="space-y-2 text-gray-300 text-sm sm:text-base">
                     <p>• RTP 96.81%</p>
                     <p>• 3x3 rolos</p>
                     <p>• Multiplicador até 2500x</p>
                   </div>
                   <Button 
                     variant="gaming-gold" 
-                    className="mt-4 w-full"
+                    className="mt-4 w-full text-sm sm:text-base"
                     onClick={handlePlayNow}
                   >
                     Jogar Demo Original
@@ -165,15 +165,15 @@ const Demo = () => {
                 </div>
                 
                 <div className="text-center">
-                  <h3 className="text-xl font-bold text-gaming-gold mb-4">Fortune Tiger 2</h3>
-                  <div className="space-y-2 text-gray-300">
+                  <h3 className="text-lg sm:text-xl font-bold text-gaming-gold mb-4">Fortune Tiger 2</h3>
+                  <div className="space-y-2 text-gray-300 text-sm sm:text-base">
                     <p>• RTP 97.12%</p>
                     <p>• 5x3 rolos</p>
                     <p>• Multiplicador até 5000x</p>
                   </div>
                   <Button 
                     variant="gaming-gold" 
-                    className="mt-4 w-full"
+                    className="mt-4 w-full text-sm sm:text-base"
                     onClick={handlePlayNow}
                   >
                     Jogar Demo 2 Agora
@@ -308,15 +308,15 @@ const Demo = () => {
             </h2>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
             {demoAccountSteps.map((step, index) => (
               <Card key={index} className="bg-card border-gaming-gold/20 hover:border-gaming-gold/50 transition-all duration-300">
-                <CardHeader className="text-center">
-                  <div className="text-5xl mb-4">{step.icon}</div>
-                  <CardTitle className="text-gaming-gold text-lg">{step.title}</CardTitle>
+                <CardHeader className="text-center pb-4">
+                  <div className="text-4xl sm:text-5xl mb-4">{step.icon}</div>
+                  <CardTitle className="text-gaming-gold text-base sm:text-lg">{step.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-gray-300">{step.desc}</p>
+                <CardContent className="text-center pt-0">
+                  <p className="text-gray-300 text-sm sm:text-base">{step.desc}</p>
                 </CardContent>
               </Card>
             ))}
@@ -340,12 +340,12 @@ const Demo = () => {
                 variant="gaming-gold" 
                 size="xl"
                 onClick={handlePlayNow}
-                className="text-xl px-12 py-6 pulse-gaming"
+                className="text-base sm:text-xl px-6 sm:px-12 py-4 sm:py-6 pulse-gaming w-full sm:w-auto max-w-full break-words"
               >
                 🎁 Jogar Fortune Tiger com bônus
               </Button>
               
-              <div className="flex justify-center gap-8 mt-8 text-sm text-gray-300">
+              <div className="flex flex-wrap justify-center gap-3 sm:gap-8 mt-8 text-xs sm:text-sm text-gray-300">
                 <div className="flex items-center gap-2">
                   <span className="text-gaming-gold">✓</span>
                   Bônus de até R$200

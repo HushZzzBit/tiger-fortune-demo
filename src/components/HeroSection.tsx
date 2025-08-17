@@ -35,7 +35,7 @@ const HeroSection = () => {
             variant="gaming-gold" 
             size="xl"
             onClick={handlePlayNow}
-            className="text-base md:text-lg lg:text-xl px-8 md:px-12 py-4 md:py-6 mb-8 pulse-gaming shadow-2xl transform hover:scale-105 transition-transform w-auto min-w-[280px]"
+            className="text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-8 md:px-12 py-3 sm:py-4 md:py-6 mb-8 pulse-gaming shadow-2xl transform hover:scale-105 transition-transform w-full sm:w-auto max-w-full sm:max-w-none sm:min-w-[280px] break-words"
           >
             🎯 Jogar agora gratuitamente
           </Button>

@@ -22,7 +22,7 @@ const FinalCTASection = () => {
             variant="gaming-gold" 
             size="xl"
             onClick={handleStartPlaying}
-            className="text-xl px-16 py-8 mb-8 pulse-gaming text-gaming-black font-bold"
+            className="text-base sm:text-xl px-6 sm:px-16 py-4 sm:py-8 mb-8 pulse-gaming text-gaming-black font-bold w-full sm:w-auto max-w-full break-words"
           >
             👉 Comece a jogar com bônus gratuito
           </Button>
@@ -32,16 +32,16 @@ const FinalCTASection = () => {
           </p>
           
           {/* Trust indicators */}
-          <div className="grid md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-2xl mx-auto">
             {[
               { icon: "🔒", text: "SSL Seguro" },
               { icon: "⚡", text: "Acesso Instantâneo" },
               { icon: "🎁", text: "Bônus Garantido" },
               { icon: "📱", text: "Mobile Friendly" }
             ].map((feature, index) => (
-              <div key={index} className="text-center p-4 bg-white/10 rounded-lg backdrop-blur-sm">
-                <div className="text-2xl mb-2">{feature.icon}</div>
-                <p className="text-white text-sm font-medium">{feature.text}</p>
+              <div key={index} className="text-center p-3 sm:p-4 bg-white/10 rounded-lg backdrop-blur-sm">
+                <div className="text-xl sm:text-2xl mb-2">{feature.icon}</div>
+                <p className="text-white text-xs sm:text-sm font-medium leading-tight">{feature.text}</p>
               </div>
             ))}
           </div>

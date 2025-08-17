@@ -103,7 +103,7 @@ const ComoJogar = () => {
               variant="gaming-gold" 
               size="xl"
               onClick={handlePlayNow}
-              className="pulse-gaming"
+              className="pulse-gaming text-sm sm:text-base px-4 sm:px-8 py-3 sm:py-4"
             >
               🎯 Começar a jogar agora
             </Button>
@@ -123,7 +123,7 @@ const ComoJogar = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
             {steps.map((step, index) => (
               <div 
                 key={step.number}
@@ -132,21 +132,21 @@ const ComoJogar = () => {
               >
                 {/* Connecting line for desktop */}
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-16 left-1/2 w-full h-0.5 bg-gaming-gold/30 z-0">
+                  <div className="hidden lg:block absolute top-16 left-1/2 w-full h-0.5 bg-gaming-gold/30 z-0">
                     <div className="absolute right-0 top-1/2 transform -translate-y-1/2 text-gaming-gold">
                       →
                     </div>
                   </div>
                 )}
                 
-                <div className="relative z-10 bg-card rounded-2xl p-6 shadow-card hover:shadow-gold transition-all duration-300 transform hover:scale-105">
+                <div className="relative z-10 bg-card rounded-2xl p-4 sm:p-6 shadow-card hover:shadow-gold transition-all duration-300 transform hover:scale-105">
                   {/* Step number */}
-                  <div className="w-12 h-12 bg-gradient-gold rounded-full flex items-center justify-center text-gaming-black text-xl font-bold mx-auto mb-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-gold rounded-full flex items-center justify-center text-gaming-black text-lg sm:text-xl font-bold mx-auto mb-4">
                     {step.number}
                   </div>
                   
-                  <h3 className="text-lg font-bold text-white mb-3">{step.title}</h3>
-                  <p className="text-gray-300 text-sm">{step.description}</p>
+                  <h3 className="text-base sm:text-lg font-bold text-white mb-3">{step.title}</h3>
+                  <p className="text-gray-300 text-xs sm:text-sm leading-tight">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -323,21 +323,21 @@ const ComoJogar = () => {
               variant="gaming-gold" 
               size="xl"
               onClick={handlePlayNow}
-              className="text-xl px-16 py-8 mb-8 pulse-gaming text-gaming-black font-bold"
+              className="text-base sm:text-xl px-6 sm:px-16 py-4 sm:py-8 mb-8 pulse-gaming text-gaming-black font-bold w-full sm:w-auto max-w-full break-words"
             >
               🎰 Jogar Fortune Tiger com bônus
             </Button>
             
-            <div className="grid md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-2xl mx-auto">
               {[
                 { icon: "🎮", text: "Modo Demo Grátis" },
                 { icon: "💰", text: "Bônus de R$200" },
                 { icon: "📱", text: "Mobile Friendly" },
                 { icon: "🔒", text: "100% Seguro" }
               ].map((feature, index) => (
-                <div key={index} className="text-center p-4 bg-white/10 rounded-lg backdrop-blur-sm">
-                  <div className="text-2xl mb-2">{feature.icon}</div>
-                  <p className="text-white text-sm font-medium">{feature.text}</p>
+                <div key={index} className="text-center p-3 sm:p-4 bg-white/10 rounded-lg backdrop-blur-sm">
+                  <div className="text-xl sm:text-2xl mb-2">{feature.icon}</div>
+                  <p className="text-white text-xs sm:text-sm font-medium leading-tight">{feature.text}</p>
                 </div>
               ))}
             </div>
