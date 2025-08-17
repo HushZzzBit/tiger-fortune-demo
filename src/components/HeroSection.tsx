@@ -17,20 +17,20 @@ const HeroSection = () => {
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/60"></div>
       
-      {/* Additional Floating Coins Animation */}
+      {/* Floating Game Symbols Animation */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 text-6xl animate-bounce" style={{animationDelay: '0s'}}>🪙</div>
-        <div className="absolute top-32 right-20 text-5xl animate-bounce" style={{animationDelay: '0.5s'}}>🪙</div>
-        <div className="absolute top-60 left-1/4 text-4xl animate-bounce" style={{animationDelay: '1s'}}>🪙</div>
-        <div className="absolute top-80 right-1/3 text-5xl animate-bounce" style={{animationDelay: '1.5s'}}>🪙</div>
-        <div className="absolute bottom-40 left-16 text-6xl animate-bounce" style={{animationDelay: '2s'}}>🪙</div>
-        <div className="absolute bottom-60 right-10 text-4xl animate-bounce" style={{animationDelay: '2.5s'}}>🪙</div>
+        <img src="/lovable-uploads/8f780dfb-55b8-4afa-b9c1-ec2badd5dd6f.png" alt="Fortune coins" className="absolute top-20 left-10 w-16 h-16 animate-bounce" style={{animationDelay: '0s'}} />
+        <img src="/lovable-uploads/e5e368aa-9687-4ad0-81ce-8cca65a67099.png" alt="Money bag" className="absolute top-32 right-20 w-14 h-14 animate-bounce" style={{animationDelay: '0.5s'}} />
+        <img src="/lovable-uploads/78032467-041a-40dd-a185-bec31826c393.png" alt="Fortune cards" className="absolute top-60 left-1/4 w-12 h-12 animate-bounce" style={{animationDelay: '1s'}} />
+        <img src="/lovable-uploads/b3e32235-4479-49dc-ae11-aa894fcf869a.png" alt="Lucky envelopes" className="absolute top-80 right-1/3 w-14 h-14 animate-bounce" style={{animationDelay: '1.5s'}} />
+        <img src="/lovable-uploads/fd1b3116-2a36-44a2-bbe7-7a806c1eda8e.png" alt="Decorative gems" className="absolute bottom-40 left-16 w-16 h-16 animate-bounce" style={{animationDelay: '2s'}} />
+        <img src="/lovable-uploads/a49e6e7e-6da9-4f85-8729-4218aeeab984.png" alt="Treasure pot" className="absolute bottom-60 right-10 w-12 h-12 animate-bounce" style={{animationDelay: '2.5s'}} />
         
-        {/* Floating petals */}
-        <div className="absolute top-24 right-1/4 text-3xl opacity-70 animate-pulse">🌸</div>
-        <div className="absolute bottom-32 left-1/3 text-3xl opacity-70 animate-pulse">🌸</div>
-        <div className="absolute top-1/2 left-8 text-2xl opacity-60 animate-pulse">⭐</div>
-        <div className="absolute top-1/3 right-8 text-2xl opacity-60 animate-pulse">⭐</div>
+        {/* Additional floating elements with pulse animation */}
+        <img src="/lovable-uploads/8f780dfb-55b8-4afa-b9c1-ec2badd5dd6f.png" alt="Fortune coins" className="absolute top-24 right-1/4 w-10 h-10 opacity-70 animate-pulse" />
+        <img src="/lovable-uploads/e5e368aa-9687-4ad0-81ce-8cca65a67099.png" alt="Money bag" className="absolute bottom-32 left-1/3 w-10 h-10 opacity-70 animate-pulse" />
+        <img src="/lovable-uploads/78032467-041a-40dd-a185-bec31826c393.png" alt="Fortune cards" className="absolute top-1/2 left-8 w-8 h-8 opacity-60 animate-pulse" />
+        <img src="/lovable-uploads/b3e32235-4479-49dc-ae11-aa894fcf869a.png" alt="Lucky envelopes" className="absolute top-1/3 right-8 w-8 h-8 opacity-60 animate-pulse" />
       </div>
       
       {/* Content */}
