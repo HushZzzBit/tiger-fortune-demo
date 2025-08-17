@@ -121,7 +121,7 @@ const ComoJogar = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              🎮 Guia Passo a Passo
+              Guia Passo a Passo
             </h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               Siga estes 5 passos simples para começar a jogar Fortune Tiger
@@ -166,7 +166,7 @@ const ComoJogar = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              💡 Dicas para <span className="text-gaming-gold">Iniciantes</span>
+              Dicas para <span className="text-gaming-gold">Iniciantes</span>
             </h2>
             <p className="text-lg text-gray-300">
               Conselhos importantes para começar com o pé direito
@@ -198,7 +198,7 @@ const ComoJogar = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                📱 Como jogar no <span className="text-gaming-gold">celular</span>
+                Como jogar no <span className="text-gaming-gold">celular</span>
               </h2>
               <p className="text-lg text-gray-300 mb-8">
                 Jogue Fortune Tiger em qualquer lugar com seu smartphone Android ou iOS
@@ -260,7 +260,7 @@ const ComoJogar = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              ⏰ Melhores <span className="text-gaming-gold">horários</span> para jogar
+              Melhores <span className="text-gaming-gold">horários</span> para jogar
             </h2>
             <p className="text-lg text-gray-300">
               Maximize suas chances escolhendo os horários certos
@@ -290,7 +290,7 @@ const ComoJogar = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              🎯 Macetes e <span className="text-gaming-gold">Estratégias</span>
+              Macetes e <span className="text-gaming-gold">Estratégias</span>
             </h2>
             <p className="text-lg text-gray-300">
               Dicas profissionais para maximizar seus ganhos
@@ -318,7 +318,7 @@ const ComoJogar = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-6xl font-bold text-white mb-8">
-              🎯 Pronto para testar suas <span className="text-gaming-gold">habilidades</span>?
+              Pronto para testar suas <span className="text-gaming-gold">habilidades</span>?
             </h2>
             
             <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto">

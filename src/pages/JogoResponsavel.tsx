@@ -37,7 +37,7 @@ const JogoResponsavel = () => {
           {/* Jogar com consciência */}
           <div className="bg-card border rounded-lg p-8">
             <h2 className="text-2xl font-bold text-gaming-gold mb-6 flex items-center gap-3">
-              🧠 Jogar com consciência
+              Jogar com consciência
             </h2>
             <p className="text-lg mb-4 text-foreground">
               Embora o jogo Fortune Tiger seja leve, divertido e empolgante, é importante lembrar que:
@@ -65,7 +65,7 @@ const JogoResponsavel = () => {
           {/* Práticas saudáveis */}
           <div className="bg-card border rounded-lg p-8">
             <h2 className="text-2xl font-bold text-gaming-gold mb-6 flex items-center gap-3">
-              ✅ Práticas saudáveis que recomendamos:
+              Práticas saudáveis que recomendamos:
             </h2>
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">
@@ -98,7 +98,7 @@ const JogoResponsavel = () => {
           {/* Sinais de alerta */}
           <div className="bg-card border rounded-lg p-8 border-red-500/20">
             <h2 className="text-2xl font-bold text-gaming-red mb-6 flex items-center gap-3">
-              🚫 Sinais de alerta
+              Sinais de alerta
             </h2>
             <p className="text-lg mb-4 text-foreground">
               Se você perceber qualquer um dos sinais abaixo, recomendamos procurar ajuda:
@@ -130,7 +130,7 @@ const JogoResponsavel = () => {
           {/* Onde buscar ajuda */}
           <div className="bg-card border rounded-lg p-8 border-blue-500/20">
             <h2 className="text-2xl font-bold text-gaming-gold mb-6 flex items-center gap-3">
-              🆘 Onde buscar ajuda
+              Onde buscar ajuda
             </h2>
             <p className="text-lg mb-6 text-foreground">
               Se você ou alguém próximo estiver enfrentando problemas com jogos, recomendamos contato com instituições especializadas:
@@ -154,7 +154,7 @@ const JogoResponsavel = () => {
           {/* Proibido para menores */}
           <div className="bg-card border rounded-lg p-8 border-orange-500/20">
             <h2 className="text-2xl font-bold text-orange-500 mb-6 flex items-center gap-3">
-              🔞 Proibido para menores
+              Proibido para menores
             </h2>
             <p className="text-lg text-foreground">
               Este site é destinado exclusivamente para maiores de 18 anos.
@@ -165,7 +165,7 @@ const JogoResponsavel = () => {
           {/* Nossa posição */}
           <div className="bg-card border rounded-lg p-8">
             <h2 className="text-2xl font-bold text-gaming-gold mb-6 flex items-center gap-3">
-              📌 Nossa posição
+              Nossa posição
             </h2>
             <p className="text-lg text-foreground">
               Somos um site independente, que não opera apostas, não coleta dinheiro e não estimula comportamentos compulsivos. 
@@ -176,7 +176,7 @@ const JogoResponsavel = () => {
           {/* Aviso importante */}
           <div className="bg-gradient-to-r from-gaming-gold/10 to-gaming-red/10 border border-gaming-gold/30 rounded-lg p-8 text-center">
             <h2 className="text-2xl font-bold text-gaming-gold mb-6 flex items-center justify-center gap-3">
-              📢 Aviso importante
+              Aviso importante
             </h2>
             <p className="text-xl font-medium text-foreground mb-4">
               O jogo é uma forma de entretenimento — e deve permanecer assim.

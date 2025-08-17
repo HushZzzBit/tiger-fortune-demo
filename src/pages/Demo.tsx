@@ -98,7 +98,7 @@ const Demo = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              💡 O que é a <span className="text-gaming-gold">versão demo</span>?
+              O que é a <span className="text-gaming-gold">versão demo</span>?
             </h2>
           </div>
           
@@ -136,7 +136,7 @@ const Demo = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              🐅 <span className="text-gaming-gold">Fortune Tiger 2</span> Demo
+              <span className="text-gaming-gold">Fortune Tiger 2</span> Demo
             </h2>
           </div>
           
@@ -190,7 +190,7 @@ const Demo = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              🧪 Simulador: como jogar no <span className="text-gaming-gold">modo teste</span>
+              Simulador: como jogar no <span className="text-gaming-gold">modo teste</span>
             </h2>
           </div>
           
@@ -239,7 +239,7 @@ const Demo = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              📲 APK Download para <span className="text-gaming-gold">Android</span>
+              APK Download para <span className="text-gaming-gold">Android</span>
             </h2>
           </div>
           
@@ -304,7 +304,7 @@ const Demo = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              👤 Conta demo: <span className="text-gaming-gold">como funciona</span>?
+              Conta demo: <span className="text-gaming-gold">como funciona</span>?
             </h2>
           </div>
           
