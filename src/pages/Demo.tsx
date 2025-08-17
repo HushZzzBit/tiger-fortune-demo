@@ -43,7 +43,7 @@ const Demo = () => {
       <section className="relative min-h-screen flex flex-col items-center justify-center bg-gaming-bg py-20">
         <div className="container mx-auto px-4 text-center mb-8">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">
-            🎰 Jogue <span className="text-gaming-gold">Fortune Tiger Demo</span> 
+            Jogue <span className="text-gaming-gold">Fortune Tiger Demo</span> 
             <br />Grátis com Dinheiro Infinito
           </h1>
           
