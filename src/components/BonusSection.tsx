@@ -5,20 +5,17 @@ const BonusSection = () => {
     {
       number: "1",
       title: "Cadastre-se",
-      description: "Registro rápido e seguro em menos de 2 minutos",
-      icon: "👤"
+      description: "Registro rápido e seguro em menos de 2 minutos"
     },
     {
       number: "2", 
       title: "Ganhe bônus",
-      description: "R$200 + giros grátis creditados automaticamente",
-      icon: "🎁"
+      description: "R$200 + giros grátis creditados automaticamente"
     },
     {
       number: "3",
       title: "Jogue Fortune Tiger",
-      description: "Teste o jogo com dinheiro de bônus",
-      icon: "🎰"
+      description: "Teste o jogo com dinheiro de bônus"
     }
   ];
 
@@ -59,8 +56,6 @@ const BonusSection = () => {
                 <div className="w-16 h-16 bg-gradient-gold rounded-full flex items-center justify-center text-gaming-black text-2xl font-bold mx-auto mb-6">
                   {step.number}
                 </div>
-                
-                <div className="text-6xl mb-4">{step.icon}</div>
                 
                 <h3 className="text-xl font-bold text-white mb-4">{step.title}</h3>
                 <p className="text-gray-300">{step.description}</p>
