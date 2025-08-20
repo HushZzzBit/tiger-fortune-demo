@@ -8,6 +8,7 @@ import BestTimeSection from "@/components/BestTimeSection";
 import FAQSection from "@/components/FAQSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
         <FinalCTASection />
       </main>
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 };
