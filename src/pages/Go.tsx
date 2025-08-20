@@ -29,7 +29,11 @@ const Go = () => {
         {/* Tiger Icon */}
         <div className="mb-8">
           <div className="w-24 h-24 mx-auto bg-gradient-to-br from-gaming-gold to-gaming-orange rounded-2xl flex items-center justify-center shadow-glow animate-bounce-soft">
-            <span className="text-4xl" role="img" aria-label="Tiger">🐅</span>
+            <img 
+              src="/lovable-uploads/d66bb07d-8782-4d5e-a8f4-3482fd703a43.png" 
+              alt="Fortune Tiger Wild Symbol" 
+              className="w-16 h-16 object-contain"
+            />
           </div>
         </div>
 
