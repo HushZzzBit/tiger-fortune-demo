@@ -20,7 +20,6 @@ const Footer = () => {
     <footer className="bg-gaming-black border-t border-gaming-gold/20">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
-          {/* Logo and description */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <img 
@@ -40,19 +39,18 @@ const Footer = () => {
               para você jogar com segurança.
             </p>
             
-            <div className="flex items-center gap-4">
-              <span className="text-gray-400 text-sm">Contato:</span>
+            <address className="not-italic">
+              <p className="text-gray-400 text-sm mb-2">Contato:</p>
               <a 
                 href="mailto:suporte@fortunedemo.com" 
                 className="text-gaming-gold hover:text-gaming-gold-light transition-colors duration-300"
               >
                 suporte@fortunedemo.com
               </a>
-            </div>
+            </address>
           </div>
           
-          {/* Navigation */}
-          <div>
+          <nav>
             <h4 className="text-white font-semibold mb-4">Navegação</h4>
             <ul className="space-y-2">
               {footerLinks.navegacao.map((link, index) => (
@@ -66,10 +64,9 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
           
-          {/* Legal */}
-          <div>
+          <nav>
             <h4 className="text-white font-semibold mb-4">Informações</h4>
             <ul className="space-y-2">
               {footerLinks.legal.map((link, index) => (
@@ -83,41 +80,39 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
         </div>
         
-        {/* Bottom section */}
         <div className="border-t border-gaming-gold/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
               © {currentYear} Fortune Demo - Todos os direitos reservados
             </p>
             
-            <div className="flex items-center gap-6 text-sm text-gray-400">
-              <span className="flex items-center gap-2">
-                <span className="text-gaming-gold">🔞</span>
+            <ul className="flex items-center gap-6 text-sm text-gray-400">
+              <li className="flex items-center gap-2">
+                <span className="text-gaming-gold" aria-hidden="true">🔞</span>
                 +18 anos
-              </span>
-              <span className="flex items-center gap-2">
-                <span className="text-gaming-gold">🛡️</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-gaming-gold" aria-hidden="true">🛡️</span>
                 Jogo Responsável
-              </span>
-              <span className="flex items-center gap-2">
-                <span className="text-gaming-gold">🔒</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-gaming-gold" aria-hidden="true">🔒</span>
                 Site Seguro
-              </span>
-            </div>
+              </li>
+            </ul>
           </div>
           
-          {/* Disclaimer */}
-          <div className="mt-6 p-4 bg-gaming-dark rounded-lg">
+          <aside className="mt-6 p-4 bg-gaming-dark rounded-lg">
             <p className="text-xs text-gray-500 leading-relaxed">
               <strong>Aviso Importante:</strong> Este site é independente e não possui afiliação direta com a PG Soft ou outros desenvolvedores mencionados. 
               As informações são fornecidas apenas para fins educacionais e de entretenimento. 
               Jogue sempre com responsabilidade e estabeleça limites de tempo e dinheiro. 
               Se você tem problemas com jogos, procure ajuda profissional.
             </p>
-          </div>
+          </aside>
         </div>
       </div>
     </footer>
