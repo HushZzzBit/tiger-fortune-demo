@@ -168,18 +168,21 @@ const Demo = () => {
                         Jogar Demo Original
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="max-w-6xl w-full h-[90vh] bg-background border-gaming-gold">
-                      <DialogHeader>
+                    <DialogContent className="max-w-6xl w-[95vw] h-[95vh] bg-background border-gaming-gold p-0">
+                      <DialogHeader className="p-4 pb-0">
                         <DialogTitle className="text-gaming-gold text-center">Fortune Tiger Demo</DialogTitle>
                       </DialogHeader>
-                      <div className="flex-1 bg-gradient-gold p-2 rounded-xl">
-                        <iframe 
-                          className="w-full h-full rounded-lg"
-                          src="https://pg-static.casinomobule.com/126/index.html?__refer=m.https%3A%2F%2Fpg-test.casinomobule.com&ot=demo-575326-9a9488ae-1621-4aa6-9887-5399248f7e1a&or=pg-static.casinomobule.com&btt=2&l=en&from=https%3A%2F%2Fcopyslots.com%2F&__hv=1f8e1d3b&language=en_EN"
-                          title="Fortune Tiger Demo Game"
-                          allow="fullscreen; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                        />
+                      <div className="flex-1 p-4 pt-2">
+                        <div className="bg-gradient-gold p-2 rounded-xl h-full">
+                          <iframe 
+                            className="w-full h-full rounded-lg"
+                            src="https://pg-static.casinomobule.com/126/index.html?__refer=m.https%3A%2F%2Fpg-test.casinomobule.com&ot=demo-575326-9a9488ae-1621-4aa6-9887-5399248f7e1a&or=pg-static.casinomobule.com&btt=2&l=en&from=https%3A%2F%2Fcopyslots.com%2F&__hv=1f8e1d3b&language=en_EN"
+                            title="Fortune Tiger Demo Game"
+                            allow="fullscreen; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            style={{ minHeight: 'calc(95vh - 120px)' }}
+                          />
+                        </div>
                       </div>
                     </DialogContent>
                   </Dialog>
