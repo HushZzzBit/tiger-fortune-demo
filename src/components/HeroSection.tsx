@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-tiger.jpg";
 
 const HeroSection = () => {
   const handlePlayNow = () => {
-    window.open('https://storage.hoster4land.net', '_blank');
+    window.open('/go', '_blank');
   };
 
   return (

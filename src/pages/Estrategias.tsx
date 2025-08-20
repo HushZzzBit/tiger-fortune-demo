@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 const Estrategias = () => {
   const handlePlayNow = () => {
-    window.open('https://storage.hoster4land.net', '_blank');
+    window.open('/go', '_blank');
   };
 
   const bestTimes = [

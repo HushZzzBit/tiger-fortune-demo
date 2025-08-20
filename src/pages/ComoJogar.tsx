@@ -8,7 +8,7 @@ import SymbolsSection from "@/components/SymbolsSection";
 
 const ComoJogar = () => {
   const handlePlayNow = () => {
-    window.open('https://storage.hoster4land.net', '_blank');
+    window.open('/go', '_blank');
   };
 
   const steps = [
