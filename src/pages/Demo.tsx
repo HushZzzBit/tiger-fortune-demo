@@ -3,11 +3,15 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { useState } from "react";
 
 import heroImage from "@/assets/hero-tiger.jpg";
 import Footer from "@/components/Footer";
 
 const Demo = () => {
+  const [isGameModalOpen, setIsGameModalOpen] = useState(false);
+  
   const handlePlayNow = () => {
     window.open('/go', '_blank');
   };
@@ -155,28 +159,45 @@ const Demo = () => {
                     <p>• 3x3 rolos</p>
                     <p>• Multiplicador até 2500x</p>
                   </div>
-                  <Button 
-                    variant="gaming-gold" 
-                    className="mt-4 w-full text-sm sm:text-base"
-                    onClick={handlePlayNow}
-                  >
-                    Jogar Demo Original
-                  </Button>
+                  <Dialog open={isGameModalOpen} onOpenChange={setIsGameModalOpen}>
+                    <DialogTrigger asChild>
+                      <Button 
+                        variant="gaming-gold" 
+                        className="mt-4 w-full text-sm sm:text-base"
+                      >
+                        Jogar Demo Original
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-6xl w-full h-[90vh] bg-background border-gaming-gold">
+                      <DialogHeader>
+                        <DialogTitle className="text-gaming-gold text-center">Fortune Tiger Demo</DialogTitle>
+                      </DialogHeader>
+                      <div className="flex-1 bg-gradient-gold p-2 rounded-xl">
+                        <iframe 
+                          className="w-full h-full rounded-lg"
+                          src="https://pg-static.casinomobule.com/126/index.html?__refer=m.https%3A%2F%2Fpg-test.casinomobule.com&ot=demo-575326-9a9488ae-1621-4aa6-9887-5399248f7e1a&or=pg-static.casinomobule.com&btt=2&l=en&from=https%3A%2F%2Fcopyslots.com%2F&__hv=1f8e1d3b&language=en_EN"
+                          title="Fortune Tiger Demo Game"
+                          allow="fullscreen; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
+                      </div>
+                    </DialogContent>
+                  </Dialog>
                 </div>
                 
                 <div className="text-center">
-                  <h3 className="text-lg sm:text-xl font-bold text-gaming-gold mb-4">Fortune Tiger 2</h3>
-                  <div className="space-y-2 text-gray-300 text-sm sm:text-base">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-500 mb-4">Fortune Tiger 2</h3>
+                  <div className="space-y-2 text-gray-500 text-sm sm:text-base">
                     <p>• RTP 97.12%</p>
                     <p>• 5x3 rolos</p>
                     <p>• Multiplicador até 5000x</p>
                   </div>
                   <Button 
-                    variant="gaming-gold" 
-                    className="mt-4 w-full text-sm sm:text-base"
-                    onClick={handlePlayNow}
+                    variant="outline" 
+                    className="mt-4 w-full text-sm sm:text-base bg-gray-800 border-gray-600 text-gray-500 cursor-not-allowed"
+                    disabled
                   >
-                    Jogar Demo 2 Agora
+                    Em Breve
                   </Button>
                 </div>
               </div>
@@ -185,12 +206,12 @@ const Demo = () => {
         </div>
       </section>
 
-      {/* Simulador */}
+      {/* Dicas para Simulação */}
       <section className="py-20 bg-gradient-card">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              Simulador: como jogar no <span className="text-gaming-gold">modo teste</span>
+              Dicas para jogar no <span className="text-gaming-gold">modo demo</span>
             </h2>
           </div>
           
@@ -198,7 +219,7 @@ const Demo = () => {
             <CardContent className="p-8">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <h3 className="text-xl font-bold text-gaming-gold mb-6">Dicas para o Simulador:</h3>
+                  <h3 className="text-xl font-bold text-gaming-gold mb-6">Aproveite o modo demo para:</h3>
                   <div className="space-y-4">
                     {simulatorTips.map((tip, index) => (
                       <div key={index} className="flex items-center gap-3">
@@ -215,18 +236,13 @@ const Demo = () => {
                   <div className="bg-gradient-gold p-1 rounded-2xl mb-6">
                     <div className="bg-card p-8 rounded-xl">
                       <div className="text-6xl mb-4">🎰</div>
-                      <div className="text-gaming-gold font-bold text-lg">Modo Simulação</div>
+                      <div className="text-gaming-gold font-bold text-lg">Modo Demo</div>
                       <div className="text-gray-300 text-sm mt-2">Teste estratégias sem riscos</div>
                     </div>
                   </div>
-                  <Button 
-                    variant="gaming-gold" 
-                    size="lg"
-                    onClick={handlePlayNow}
-                    className="w-full"
-                  >
-                    Iniciar Simulador
-                  </Button>
+                  <p className="text-gray-300 text-sm">
+                    Use o jogo acima para praticar antes de apostar dinheiro real
+                  </p>
                 </div>
               </div>
             </CardContent>
