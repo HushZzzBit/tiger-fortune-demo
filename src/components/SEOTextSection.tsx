@@ -70,8 +70,8 @@ const SEOTextSection = () => {
         </header>
 
         {/* Expert Disclaimer */}
-        <blockquote className="bg-[#FAF6EE] border-l-4 border-primary p-4 md:p-6 rounded-r-xl mb-12 text-foreground">
-          <p className="text-sm md:text-base">
+        <blockquote className="bg-[#FAF6EE] border-l-4 border-primary p-4 md:p-6 rounded-r-xl mb-12">
+          <p className="text-sm md:text-base text-[#111111]">
             <strong className="text-primary">Nota do especialista:</strong> Fortune Tiger usa RNG (gerador de números aleatórios). 
             <em> Não há horários garantidos de pagamento.</em> As dicas abaixo são baseadas em padrões relatados pela comunidade 
             e sessões de teste no modo demo.
@@ -116,11 +116,11 @@ const SEOTextSection = () => {
 
         {/* Section B - Onde posso jogar */}
         <section className="mb-12 bg-[#FAF6EE] p-6 md:p-8 rounded-2xl" id="onde-jogar">
-          <h3 className="text-xl md:text-2xl font-bold mb-4 text-foreground flex items-center gap-2">
+          <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#111111] flex items-center gap-2">
             <Shield className="w-6 h-6 text-primary" aria-hidden="true" />
             Onde posso jogar a versão demo?
           </h3>
-          <p className="text-muted-foreground mb-4 leading-relaxed">
+          <p className="text-[#222222] mb-4 leading-relaxed">
             Plataforma confiável para jogar Fortune Tiger: acesse com segurança, carregamento rápido, 
             versão original e opção de jogar slots grátis Fortune Tiger antes do depósito.
           </p>
@@ -269,8 +269,8 @@ const SEOTextSection = () => {
               </Card>
             ))}
           </div>
-          <blockquote className="bg-[#FAF6EE] border-l-4 border-accent p-4 rounded-r-xl text-foreground italic">
-            "Minha regra pessoal: começo na demo, passo pro real só quando entendo a variação do dia."
+          <blockquote className="bg-[#FAF6EE] border-l-4 border-accent p-4 rounded-r-xl italic">
+            <p className="text-[#111111]">"Minha regra pessoal: começo na demo, passo pro real só quando entendo a variação do dia."</p>
           </blockquote>
           <div className="mt-4">
             <a 
@@ -381,7 +381,7 @@ const SEOTextSection = () => {
 
         {/* Section J - Checklist */}
         <section className="mb-12 bg-[#FAF6EE] p-6 md:p-8 rounded-2xl">
-          <h3 className="text-xl md:text-2xl font-bold mb-6 text-foreground">
+          <h3 className="text-xl md:text-2xl font-bold mb-6 text-[#111111]">
             Mini-checklist antes de jogar
           </h3>
           <ul className="space-y-3">
@@ -390,7 +390,7 @@ const SEOTextSection = () => {
                 <div className="w-6 h-6 rounded border-2 border-primary flex items-center justify-center flex-shrink-0">
                   <Check className="w-4 h-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-muted-foreground">{item}</span>
+                <span className="text-[#222222]">{item}</span>
               </li>
             ))}
           </ul>
