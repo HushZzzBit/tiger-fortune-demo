@@ -28,7 +28,7 @@ const TermosUso = () => {
       <SEOHead
         title="Termos de Uso | Fortune Demo"
         description="Termos de uso do Fortune Demo. Leia as condições de utilização do site, direitos e responsabilidades dos usuários."
-        canonical="/termos-uso"
+        canonical="/termos-uso/"
         keywords="termos de uso, condições fortune demo, regras do site"
         jsonLd={jsonLd}
       />
