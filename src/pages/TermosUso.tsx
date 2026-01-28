@@ -13,10 +13,25 @@ import {
   RefreshCw, 
   Mail 
 } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const TermosUso = () => {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Termos de Uso - Fortune Demo",
+    "description": "Termos de uso do site Fortune Demo. Regras e condições para utilização do site.",
+    "dateModified": "2025-08-16"
+  };
   return (
     <main className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20">
+      <SEOHead
+        title="Termos de Uso | Fortune Demo"
+        description="Termos de uso do Fortune Demo. Leia as condições de utilização do site, direitos e responsabilidades dos usuários."
+        canonical="/termos-uso"
+        keywords="termos de uso, condições fortune demo, regras do site"
+        jsonLd={jsonLd}
+      />
       <Navigation />
       
       <div className="container mx-auto px-4 py-8 max-w-4xl">

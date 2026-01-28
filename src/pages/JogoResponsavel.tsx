@@ -1,9 +1,28 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const JogoResponsavel = () => {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Jogo Responsável - Fortune Tiger",
+    "description": "Compromisso com a diversão consciente. Dicas de jogo responsável, sinais de alerta e onde buscar ajuda.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Fortune Demo",
+      "url": "https://oamorcontagia.site/"
+    }
+  };
   return (
     <main className="min-h-screen bg-background">
+      <SEOHead
+        title="Jogo Responsável | Fortune Tiger - Jogar com Consciência"
+        description="Jogue Fortune Tiger com responsabilidade. Dicas para controle de banca, sinais de alerta, práticas saudáveis e onde buscar ajuda."
+        canonical="/jogo-responsavel"
+        keywords="jogo responsável, fortune tiger responsável, limite de apostas, ajuda jogador compulsivo, jogar com consciência"
+        jsonLd={jsonLd}
+      />
       <Navigation />
       
       {/* Hero Section */}
