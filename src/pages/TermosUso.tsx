@@ -195,7 +195,7 @@ const TermosUso = () => {
               </p>
               <div className="flex items-center gap-2 text-primary font-medium">
                 <Mail className="w-4 h-4" />
-                <span>contato@fortunedemo.com</span>
+                <span>contato@oamorcontagia.site</span>
               </div>
             </CardContent>
           </Card>

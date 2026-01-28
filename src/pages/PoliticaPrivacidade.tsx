@@ -150,7 +150,7 @@ const PoliticaPrivacidade = () => {
                   Para exercer seus direitos, entre em contato conosco pelo e-mail:
                 </p>
                 <p className="text-primary font-medium mt-2">
-                  📩 privacidade@fortunedemo.com
+                  📩 privacidade@oamorcontagia.site
                 </p>
               </div>
             </CardContent>
@@ -187,7 +187,7 @@ const PoliticaPrivacidade = () => {
               <div className="bg-primary/10 border border-primary/20 rounded-lg p-4">
                 <p className="text-foreground font-medium">Responsável pelo tratamento de dados:</p>
                 <p className="text-muted-foreground">Equipe Fortune Demo</p>
-                <p className="text-primary font-medium">📧 info@fortunedemo.com</p>
+                <p className="text-primary font-medium">📧 info@oamorcontagia.site</p>
               </div>
             </CardContent>
           </Card>

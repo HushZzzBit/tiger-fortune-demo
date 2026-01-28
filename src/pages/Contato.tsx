@@ -150,7 +150,7 @@ const Contato = () => {
                     <HelpCircle className="w-5 h-5 text-primary" />
                     <div>
                       <p className="font-medium">Dúvidas Gerais</p>
-                      <p className="text-sm text-muted-foreground">info@fortunedemo.com</p>
+                      <p className="text-sm text-muted-foreground">info@oamorcontagia.site</p>
                     </div>
                   </div>
                   
@@ -158,7 +158,7 @@ const Contato = () => {
                     <Shield className="w-5 h-5 text-primary" />
                     <div>
                       <p className="font-medium">Privacidade & LGPD</p>
-                      <p className="text-sm text-muted-foreground">privacidade@fortunedemo.com</p>
+                      <p className="text-sm text-muted-foreground">privacidade@oamorcontagia.site</p>
                     </div>
                   </div>
                   
@@ -166,7 +166,7 @@ const Contato = () => {
                     <Users className="w-5 h-5 text-primary" />
                     <div>
                       <p className="font-medium">Parcerias</p>
-                      <p className="text-sm text-muted-foreground">parcerias@fortunedemo.com</p>
+                      <p className="text-sm text-muted-foreground">parcerias@oamorcontagia.site</p>
                     </div>
                   </div>
                 </div>

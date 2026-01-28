@@ -42,10 +42,10 @@ const Footer = () => {
             <address className="not-italic">
               <p className="text-gray-400 text-sm mb-2">Contato:</p>
               <a 
-                href="mailto:suporte@fortunedemo.com" 
+                href="mailto:suporte@oamorcontagia.site" 
                 className="text-gaming-gold hover:text-gaming-gold-light transition-colors duration-300"
               >
-                suporte@fortunedemo.com
+                suporte@oamorcontagia.site
               </a>
             </address>
           </div>
