@@ -69,7 +69,7 @@ const FAQSection = () => {
             </span>
             <span className="flex items-center gap-2 break-all sm:break-normal">
               <span className="text-gaming-gold">📧</span>
-              <span className="text-xs sm:text-sm">suporte@fortunedemo.com</span>
+              <span className="text-xs sm:text-sm">suporte@oamorcontagia.site</span>
             </span>
             <span className="flex items-center gap-2 whitespace-nowrap">
               <span className="text-gaming-gold">🕐</span>

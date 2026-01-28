@@ -192,10 +192,10 @@ const JogoResponsavel = () => {
               📧 Para mais informações sobre nossa política de responsabilidade:
             </h3>
             <a 
-              href="mailto:info@fortunedemo.com" 
+              href="mailto:info@oamorcontagia.site" 
               className="text-lg text-blue-400 hover:text-blue-300 transition-colors"
             >
-              info@fortunedemo.com
+              info@oamorcontagia.site
             </a>
           </div>
 
