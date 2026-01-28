@@ -108,7 +108,7 @@ const SEOTextSection = () => {
             </Card>
           </div>
           <div className="text-center">
-            <Button variant="gaming" size="lg" onClick={handleCTA} className="min-h-[44px]">
+            <Button variant="gaming" size="lg" onClick={() => window.open('/demo', '_blank')} className="min-h-[44px]">
               Abrir demo agora
             </Button>
           </div>
@@ -125,7 +125,7 @@ const SEOTextSection = () => {
             versão original e opção de jogar slots grátis Fortune Tiger antes do depósito.
           </p>
           <a 
-            href="/go" 
+            href="/demo" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-primary font-semibold hover:text-primary/80 underline underline-offset-4 transition-colors min-h-[44px] inline-flex items-center"
@@ -274,7 +274,7 @@ const SEOTextSection = () => {
           </blockquote>
           <div className="mt-4">
             <a 
-              href="/go" 
+              href="/demo" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-primary font-semibold hover:text-primary/80 underline underline-offset-4 transition-colors min-h-[44px] inline-flex items-center"
