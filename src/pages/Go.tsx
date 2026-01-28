@@ -14,7 +14,15 @@ const Go = () => {
       });
     }, 200);
 
-    return () => clearInterval(interval);
+    // Redirect when progress reaches 100%
+    const redirectTimer = setTimeout(() => {
+      window.location.href = "https://chickennroud.com/FTgier";
+    }, 2500);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(redirectTimer);
+    };
   }, []);
 
   return (
