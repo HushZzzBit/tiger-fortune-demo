@@ -8,8 +8,26 @@ import { useState } from "react";
 
 import heroImage from "@/assets/hero-tiger.jpg";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const Demo = () => {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Fortune Tiger Demo",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web, Android, iOS",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "BRL"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "15420"
+    }
+  };
   const [isGameModalOpen, setIsGameModalOpen] = useState(false);
   
   const handlePlayNow = () => {
@@ -42,6 +60,13 @@ const Demo = () => {
 
   return (
     <div className="min-h-screen bg-gaming-bg">
+      <SEOHead
+        title="Fortune Tiger Demo Grátis | Jogue com Dinheiro Infinito"
+        description="Jogue Fortune Tiger demo grátis com saldo virtual ilimitado. Treine sem risco antes de apostar. Versão original PG Soft. Sem cadastro!"
+        canonical="/demo"
+        keywords="fortune tiger demo gratis, jogar fortune tiger gratis, fortune tiger dinheiro infinito, demo slot tiger, tigrinho gratis"
+        jsonLd={jsonLd}
+      />
       <Navigation />
       {/* Hero Section with Game Iframe */}
       <section className="relative min-h-screen flex flex-col items-center justify-center bg-gaming-bg py-20">

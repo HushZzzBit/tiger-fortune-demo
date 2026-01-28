@@ -4,10 +4,25 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Shield, User, Cookie, Target, ExternalLink, Lock, Phone, FileText } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const PoliticaPrivacidade = () => {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Política de Privacidade - Fortune Demo",
+    "description": "Política de privacidade do site Fortune Demo. Saiba como coletamos e protegemos seus dados.",
+    "dateModified": "2025-08-16"
+  };
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Política de Privacidade | Fortune Demo"
+        description="Política de privacidade do Fortune Demo. Saiba como coletamos, usamos e protegemos seus dados pessoais. LGPD e GDPR."
+        canonical="/politica-privacidade"
+        keywords="política de privacidade, LGPD, proteção de dados, privacidade fortune tiger"
+        jsonLd={jsonLd}
+      />
       <Navigation />
       
       {/* Hero Section */}

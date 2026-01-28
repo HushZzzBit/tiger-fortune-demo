@@ -6,8 +6,25 @@ import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const Estrategias = () => {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Estratégias e Dicas para Jogar Fortune Tiger",
+    "description": "Descubra as melhores estratégias, horários e dicas para jogar Fortune Tiger de forma inteligente.",
+    "author": {
+      "@type": "Organization",
+      "name": "Fortune Demo"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Fortune Demo"
+    },
+    "datePublished": "2025-01-01",
+    "dateModified": "2025-01-28"
+  };
   const handlePlayNow = () => {
     window.open('/go', '_blank');
   };
@@ -64,6 +81,13 @@ const Estrategias = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Estratégias Fortune Tiger | Dicas e Melhores Horários 2025"
+        description="Melhores estratégias para jogar Fortune Tiger. Dicas de banca, horários ideais, mitos desvendados. Jogue de forma inteligente!"
+        canonical="/estrategias"
+        keywords="estratégias fortune tiger, dicas fortune tiger, melhores horários fortune tiger, como ganhar fortune tiger, macetes tigrinho"
+        jsonLd={jsonLd}
+      />
       <Navigation />
       
       {/* Hero Section */}

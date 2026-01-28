@@ -5,8 +5,42 @@ import { Badge } from "@/components/ui/badge";
 import { Smartphone, Monitor, Clock, Target, TrendingUp, Star } from "lucide-react";
 import Footer from "@/components/Footer";
 import SymbolsSection from "@/components/SymbolsSection";
+import SEOHead from "@/components/SEOHead";
 
 const ComoJogar = () => {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Como Jogar Fortune Tiger",
+    "description": "Guia completo passo a passo para iniciantes aprenderem a jogar Fortune Tiger no celular ou PC",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Acesse o site confiável",
+        "text": "Clique no botão e acesse uma plataforma licenciada e segura"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Cadastre-se",
+        "text": "Registro rápido em menos de 2 minutos com seus dados básicos"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Escolha demo ou real",
+        "text": "Teste no modo demo gratuito ou jogue com dinheiro real"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Ajuste sua aposta",
+        "text": "Defina o valor da aposta usando os botões + e - na tela"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Gire os rolos",
+        "text": "Clique no botão central para iniciar o jogo e torcer pela sorte"
+      }
+    ]
+  };
   const handlePlayNow = () => {
     window.open('/go', '_blank');
   };
@@ -88,6 +122,13 @@ const ComoJogar = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Como Jogar Fortune Tiger | Guia Completo para Iniciantes 2025"
+        description="Aprenda como jogar Fortune Tiger passo a passo. Guia completo com dicas, estratégias, melhores horários e símbolos. Jogue no celular ou PC."
+        canonical="/como-jogar"
+        keywords="como jogar fortune tiger, tutorial fortune tiger, guia fortune tiger, fortune tiger iniciantes, fortune tiger celular"
+        jsonLd={jsonLd}
+      />
       <Navigation />
       {/* Hero Section */}
       <section className="py-16 bg-gradient-hero text-center">

@@ -19,8 +19,26 @@ import {
   HelpCircle
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import SEOHead from "@/components/SEOHead";
 
 const Contato = () => {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contato - Fortune Demo",
+    "description": "Entre em contato com a equipe Fortune Demo. Dúvidas, sugestões e parcerias.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Fortune Demo",
+      "email": "info@oamorcontagia.site",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@oamorcontagia.site",
+        "contactType": "customer service",
+        "availableLanguage": "Portuguese"
+      }
+    }
+  };
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -45,6 +63,13 @@ const Contato = () => {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20">
+      <SEOHead
+        title="Contato | Fortune Demo - Fale Conosco"
+        description="Entre em contato com a equipe Fortune Demo. Tire dúvidas sobre Fortune Tiger, envie sugestões ou proponha parcerias."
+        canonical="/contato"
+        keywords="contato fortune tiger, suporte fortune demo, fale conosco, dúvidas fortune tiger"
+        jsonLd={jsonLd}
+      />
       <Navigation />
       
       <div className="container mx-auto px-4 py-8 max-w-6xl">
