@@ -7,6 +7,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import BestTimeSection from "@/components/BestTimeSection";
 import FAQSection from "@/components/FAQSection";
 import FinalCTASection from "@/components/FinalCTASection";
+import SEOTextSection from "@/components/SEOTextSection";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 
@@ -22,6 +23,7 @@ const Index = () => {
         <TestimonialsSection />
         <BestTimeSection />
         <FAQSection />
+        <SEOTextSection />
         <FinalCTASection />
       </main>
       <Footer />
